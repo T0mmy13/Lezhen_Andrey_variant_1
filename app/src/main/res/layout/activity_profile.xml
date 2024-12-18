@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#150D0B"
+    android:padding="16dp"
+    tools:context=".ProfileActivity">
+
+    <!-- Аватарка -->
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginEnd="16dp"
+        android:scaleType="centerCrop"
+        android:importantForAccessibility="no" />
+
+    <!-- Фамилия -->
+    <TextView
+        android:id="@+id/profile_last_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/avatar"
+        android:layout_alignTop="@id/avatar"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Имя -->
+    <TextView
+        android:id="@+id/profile_first_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_last_name"
+        android:layout_alignStart="@id/profile_last_name"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Почта -->
+    <TextView
+        android:id="@+id/profile_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_first_name"
+        android:layout_alignStart="@id/profile_first_name"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="HardcodedText" />
+
+    <!-- Панель навигации -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:background="#1A0F0D"
+        android:padding="8dp">
+
+        <!-- Кнопка Профиль -->
+        <Button
+            android:id="@+id/btn_profile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#503E3A"
+            android:text="Профиль"
+            android:textColor="#BCAAA4"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <!-- Кнопка Трекер -->
+        <Button
+            android:id="@+id/btn_tracker"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#503E3A"
+            android:text="Трекер"
+            android:textColor="#BCAAA4"
+            tools:ignore="ButtonStyle,HardcodedText" />
+
+        <!-- Кнопка Выход -->
+        <Button
+            android:id="@+id/btn_logout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#503E3A"
+            android:text="Выход"
+            android:textColor="#BCAAA4"
+            tools:ignore="ButtonStyle,HardcodedText" />
+    </LinearLayout>
+</RelativeLayout>

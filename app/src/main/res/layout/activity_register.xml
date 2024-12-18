@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#150D0B"
+    android:padding="16dp"
+    tools:context=".RegisterActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/last_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#A8A8A8"
+            android:hint="Фамилия"
+            android:importantForAutofill="no"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A8A8A8"
+            tools:ignore="HardcodedText,TextFields,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/first_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#A8A8A8"
+            android:hint="Имя"
+            android:importantForAutofill="no"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A8A8A8"
+            tools:ignore="HardcodedText,TextFields,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#A8A8A8"
+            android:hint="Почта"
+            android:importantForAutofill="no"
+            android:inputType="textEmailAddress"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A8A8A8"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/register_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#A8A8A8"
+            android:hint="Логин"
+            android:importantForAutofill="no"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A8A8A8"
+            tools:ignore="HardcodedText,TextFields,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/register_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#A8A8A8"
+            android:hint="Пароль"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A8A8A8"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:backgroundTint="#A8A8A8"
+            android:hint="Подтверждение пароля"
+            android:importantForAutofill="no"
+            android:inputType="textPassword"
+            android:textColor="#FFFFFF"
+            android:textColorHint="#A8A8A8"
+            tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Зарегистрироваться"
+            android:background="#2B70A8"
+            android:textColor="#FFFFFF"
+            tools:ignore="HardcodedText"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+        <Button
+            android:id="@+id/btn_already_have_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="У меня уже есть аккаунт"
+            android:background="#150D0B"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="#150D0B"
+            android:backgroundTintMode="src_atop"
+            tools:ignore="HardcodedText"
+            android:textAllCaps="false"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
